@@ -1,1 +1,1 @@
-Restaurante Chiantown
+Restaurante Chinatown
