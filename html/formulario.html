@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="../img/favicon_chinatown.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Restaurante Chinatown</title>
+    <meta name="description"
+        content="Página web del restaurante Chinatown. Aquí muestro información del local y algunos platos.">
+    <meta name="keywords" content="restaurante chino, comida china, menú, ofertas, Tarragona">
+    <meta name="author" content="Shuangyu Xu Zheng">
+    <meta itemprop="servesCuisine" content="Comida china">
+    <meta itemprop="telephone" content="977229484">
+    <script type="application/ld+json">>
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Chinatown",
+  "url": "http://127.0.0.1:5500/html/inicio.html",
+  "telephone": "977229484",
+  "priceRange": "10€ - 20€",
+  "menu": "http://127.0.0.1:5500/html/menu.html",
+  "servesCuisine": "comida china",
+  "acceptsReservations": "false",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plaça dels Carros",
+    "addressLocality": "Tarragona",
+    "postalCode": "43004",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.1106208,
+    "longitude": 1.2500895
+  }  
+}
+</script>
+</head>
+
+<body>
+    <div class="fixed-top shadow-sm bg-white">
+        <div class="cabecera_caja_roja text-center shadow-sm bg-red">
+            <p>Restaurante recetas de toda la Vida</p>
+        </div>
+        <header class="container d-flex align-items-center">
+            <div class="cabecera_logo"><a href="../html/index.html"><img src="../img/logo_chinatowndr.png"
+                        alt="logo chinatown-tgn"></a></div>
+            <nav>
+                <ul class="cabecera_index d-flex list-unstyled mb-0 gap-10">
+                    <li><a href="../html/ofertas.html">OFERTAS</a></li>
+                    <li><a href="../html/carta.html">CARTA</a></li>
+                    <li><a href="../html/menu.html">MENÚ</a></li>
+                    <li><a href="../html/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <nav class="d-flex gap-0 align-items-center ms-auto">
+                <div class="cabecera_logo_redondo"><a href="../html/formulario.html"><img src="../img/logo_redondod.png"
+                            alt="logo chinatown-tgn"></a></div>
+                <div class="cabecera_logo_redondo"><a href="../html/carrito.html"><img src="../img/logo_redondod.png"
+                            alt="logo chinatown-tgn"></a></div>
+            </nav>
+        </header>
+    </div>
+    <div
+        class="cabecera_caja_negra position-relative text-center py-3 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <p class="cabecera_caja_negra_texto mb-0 fs-5">PIDE TU COMIDA A DOMICILIO O PARA RECOGER</p>
+        <a href="../html/menu.html" class="cabecera_boton_pedido">COMENZAR PEDIDO</a>
+    </div>
+    <div class="dragones position-relative w-100 top-0 start-0">
+        <img class="dragon_izquierda position-absolute" src="../img/dragon_izquierda.png" alt="dragon">
+        <img class="dragon_derecha position-absolute" src="../img/dragon_derecha.png" alt="dragon">
+    </div>
+    <h1 class="text-center mt-5">Contáctanos</h1>
+    <hr class="contacto_linea mx-auto opacity-100">
+    <p class="text-center text-muted mb-5">Rellena este formulario y te responderemos pronto</p>
+    <div class="row mb-5 pb-5">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto card shadow-sm">
+            <form class="card-body p-4" action="../php/formulario.php" method="post">
+                <div class="mb-4 pb-3 border-bottom">
+                    <h5 class="text-danger mb-3">Datos Personales</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="campo_nombre" class="form-label fw-semibold">Nombre <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="campo_nombre" name="nombre"
+                                placeholder="Tu nombre" minlength="2" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="campo_apellidos" class="form-label fw-semibold">Apellidos <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="campo_apellidos" name="apellidos"
+                                placeholder="Tus apellidos" minlength="2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 pb-3 border-bottom">
+                    <h5 class="text-danger mb-3">Información de Contacto</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="campo_email" class="form-label fw-semibold">Email <span
+                                    class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">@</span>
+                                <input type="email" class="form-control" id="campo_email" name="email"
+                                    placeholder="ejemplo@correo.com" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="campo_telefono" class="form-label fw-semibold">Teléfono <span
+                                    class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">+34</span>
+                                <input type="tel" class="form-control" id="campo_telefono" name="telefono"
+                                    placeholder="612345678" maxlength="9" pattern="[0-9]{9}" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 pb-3 border-bottom">
+                    <h5 class="text-danger mb-3">Motivo del Contacto</h5>
+                    <div class="mb-3">
+                        <label for="selector_asunto" class="form-label fw-semibold">¿Sobre qué quieres
+                            contactarnos? <span class="text-danger">*</span></label>
+                        <select class="form-select" id="selector_asunto" name="asunto" required>
+                            <option value="">Elige una opción...</option>
+                            <option value="consulta">Pregunta general</option>
+                            <option value="pedido">Dudas sobre pedidos</option>
+                            <option value="sugerencia">Darte mi opinión</option>
+                            <option value="queja">Poner una queja</option>
+                            <option value="otro">Otro motivo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="area_mensaje" class="form-label fw-semibold">Tu mensaje <span
+                                class="text-danger">*</span></label>
+                        <textarea class="form-control" id="area_mensaje" name="mensaje" rows="5"
+                            placeholder="Escribe lo que necesites..." maxlength="500" minlength="10"
+                            required></textarea>
+                        <div class="form-text">Máximo 500 caracteres</div>
+                    </div>
+                </div>
+                <div class="mb-4 pb-3 border-bottom">
+                    <h5 class="text-danger mb-3">Dirección <span class="text-muted small fw-normal">(opcional)</span>
+                    </h5>
+                    <div class="mb-3">
+                        <label for="campo_direccion" class="form-label fw-semibold">Dirección</label>
+                        <input type="text" class="form-control" id="campo_direccion" name="direccion"
+                            placeholder="Tu dirección">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mb-3">
+                            <label for="campo_ciudad" class="form-label fw-semibold">Ciudad</label>
+                            <input type="text" class="form-control" id="campo_ciudad" name="ciudad"
+                                placeholder="Tarragona" value="Tarragona">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="campo_codigo_postal" class="form-label fw-semibold">C.P.</label>
+                            <input type="text" class="form-control" id="campo_codigo_postal" name="codigoPostal"
+                                placeholder="43004" maxlength="5" pattern="[0-9]{5}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="acepta_privacidad" name="privacidad" required>
+                    <label class="form-check-label" for="acepta_privacidad">
+                        Acepto la <a href="../html/politica_privacidad.html" class="link-dark" target="_blank">política
+                            de privacidad</a> del restaurante
+                    </label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-danger btn-lg">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="pie">
+        <div class="pie_cajaG">
+            <div class="pie_cajaP text-center">
+                <h4>Contacto</h4>
+                <div class="pie_linea"></div>
+                <p>977229484<br>
+                    639685085</p>
+            </div>
+            <div class="pie_cajaP text-center">
+                <h4>Política de Privacidad</h4>
+                <div class="pie_linea"></div>
+                <a href="../html/politica_privacidad.html"><br> Aviso Legal</a>
+            </div>
+            <div class="pie_cajaP text-center">
+                <h4>Síguenos</h4>
+                <div class="pie_linea"></div>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
+                        <img class="pie_siguenos_instagram" src="../img/icono_instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
+                        <img class="pie_siguenos_facebook" src="../img/icono_facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+    </footer>
+    <div class="politica_privacidad text-center">
+        <p>China Town es un pequeño local chino de comida rápida con encanto auténtico.<br>
+            ©2025 China Town IP LLC. Todos
+            los derechos reservados. - <a href="../html/politica_privacidad.html">Aviso
+                Legal</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
