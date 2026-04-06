@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="icon" href="../img/favicon_chinatown.png" type="image/x-icon">
-    <title>Restaurante Chinatown</title>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="icon" href="/img/favicon_chinatown.png" type="image/x-icon">
+    <title>Restaurante ChinaTown</title>
     <meta name="description"
         content="Página web del restaurante Chinatown. Aquí muestro información del local y algunos platos.">
     <meta name="keywords" content="restaurante chino, comida china, menú, ofertas, Tarragona">
     <meta name="author" content="Shuangyu Xu Zheng">
-    <meta itemprop="servesCuisine" content="Comida china">
-    <meta itemprop="telephone" content="977229484">
-    <script type="application/ld+json">>
+    <meta name="copyright" content="©2025 China Town">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Chinatown",
-  "url": "http://127.0.0.1:5500/html/inicio.html",
+  "url": "https://restaurantechinatowntarragona.netlify.app/",
   "telephone": "977229484",
   "priceRange": "10€ - 20€",
-  "menu": "http://127.0.0.1:5500/html/menu.html",
+  "menu": "https://restaurantechinatowntarragona.netlify.app/html/menu",
   "servesCuisine": "comida china",
   "acceptsReservations": "false",
   "address": {
@@ -48,20 +47,30 @@
             <p>Restaurante recetas de toda la Vida</p>
         </div>
         <header class="container d-flex align-items-center">
-            <div class="cabecera_logo"><a href="../index.html"><img src="../img/logo_chinatowndr.png"
+            <div class="cabecera_logo"><a href="/index.html"><img src="/img/logo_chinatowndr.png"
                         alt="logo chinatown-tgn"></a></div>
-            <nav>
-                <ul class="cabecera_index d-flex list-unstyled mb-0 gap-10">
-                    <li><a href="../html/ofertas.html">OFERTAS</a></li>
-                    <li><a href="../html/carta.html">CARTA</a></li>
-                    <li><a href="../html/menu.html">MENÚ</a></li>
-                    <li><a href="../html/contacto.html">CONTACTO</a></li>
+            <div class="dropdown cabecera_icono_cuadrado_movil">
+                <button class="btn p-0 border-0 bg-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><img src="/img/icono_menu.png" alt="icono menú">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end menu_despleglabe">
+                    <li><a class="dropdown-item" href="/html/ofertas.html">OFERTAS</a></li>
+                    <li><a class="dropdown-item" href="/html/carta.html">CARTA</a></li>
+                    <li><a class="dropdown-item" href="/html/menu.html">MENÚ</a></li>
+                    <li><a class="dropdown-item" href="/html/contacto.html">CONTACTO</a></li>
                 </ul>
-            </nav>
+            </div>
+            <ul class="cabecera_index list-unstyled mb-0 gap-10">
+                <li><a href="/html/ofertas.html">OFERTAS</a></li>
+                <li><a href="/html/carta.html">CARTA</a></li>
+                <li><a href="/html/menu.html">MENÚ</a></li>
+                <li><a href="/html/contacto.html">CONTACTO</a></li>
+            </ul>
+
             <nav class="d-flex gap-0 align-items-center ms-auto">
-                <div class="cabecera_logo_redondo"><a href="../html/formulario.html"><img src="../img/logo_redondod.png"
+                <div class="cabecera_logo_redondo"><a href="/html/formulario.html"><img src="/img/logo_redondod.png"
                             alt="logo chinatown-tgn"></a></div>
-                <div class="cabecera_logo_redondo"><a href="../html/carrito.html"><img src="../img/logo_redondod.png"
+                <div class="cabecera_logo_redondo"><a href="/html/carrito.html"><img src="/img/logo_redondod.png"
                             alt="logo chinatown-tgn"></a></div>
             </nav>
         </header>
@@ -69,13 +78,13 @@
     <div
         class="cabecera_caja_negra position-relative text-center py-3 d-flex flex-column flex-md-row align-items-center justify-content-center">
         <p class="cabecera_caja_negra_texto mb-0 fs-5">PIDE TU COMIDA A DOMICILIO O PARA RECOGER</p>
-        <a href="../html/menu.html" class="cabecera_boton_pedido">COMENZAR PEDIDO</a>
+        <a href="/html/menu.html" class="cabecera_boton_pedido">COMENZAR PEDIDO</a>
     </div>
     <div class="dragones position-relative w-100 top-0 start-0">
-        <img class="dragon_izquierda position-absolute" src="../img/dragon_izquierda.png" alt="dragon">
-        <img class="dragon_derecha position-absolute" src="../img/dragon_derecha.png" alt="dragon">
+        <img class="dragon_izquierda position-absolute" src="/img/dragon_izquierda.png" alt="dragon">
+        <img class="dragon_derecha position-absolute" src="/img/dragon_derecha.png" alt="dragon">
     </div>
-    <h1 class="text-center">MENÚ</h1>
+    <h2 class="titulo_apartado text-center">MENÚ</h2>
     <footer class="pie">
         <div class="pie_cajaG">
             <div class="pie_cajaP text-center">
@@ -87,23 +96,24 @@
             <div class="pie_cajaP text-center">
                 <h4>Política de Privacidad</h4>
                 <div class="pie_linea"></div>
-                <a href="../html/politica_privacidad.html"><br> Aviso Legal</a>
+                <a href="/html/politica_privacidad.html"><br> Aviso Legal</a>
             </div>
             <div class="pie_cajaP text-center">
                 <h4>Síguenos</h4>
                 <div class="pie_linea"></div>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
-                        <img class="pie_siguenos_instagram" src="../img/icono_instagram.png" alt="instagram"></a>
+                        <img class="pie_siguenos_instagram" src="/img/icono_instagram.png" alt="instagram"></a>
                     <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
-                        <img class="pie_siguenos_facebook" src="../img/icono_facebook.png" alt="facebook"></a>
+                        <img class="pie_siguenos_facebook" src="/img/icono_facebook.png" alt="facebook"></a>
                 </div>
             </div>
+        </div>
     </footer>
     <div class="politica_privacidad text-center">
         <p>China Town es un pequeño local chino de comida rápida con encanto auténtico.<br>
             ©2025 China Town IP LLC. Todos
-            los derechos reservados. - <a href="../html/politica_privacidad.html">Aviso
+            los derechos reservados. - <a href="/html/politica_privacidad.html">Aviso
                 Legal</a></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

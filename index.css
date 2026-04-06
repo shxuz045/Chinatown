@@ -8,6 +8,7 @@
     display: flex;
 }
 
+/* Ordenador */
 @media (min-width: 1280px) {
     .cabecera_icono_cuadrado_movil {
         display: none;
@@ -236,6 +237,7 @@
     }
 }
 
+/* Tablet */
 @media (min-width: 800px) and (max-width: 1279px) {
 
     html,
@@ -452,6 +454,7 @@
     }
 }
 
+/* Móvil */
 @media (max-width: 799px) {
     body {
         overflow-x: hidden;
